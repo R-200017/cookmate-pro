@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "api/generate-recipe.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/api/generate-recipe", "dest": "/api/generate-recipe.js" }
+    ]
+  }
