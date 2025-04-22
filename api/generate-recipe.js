@@ -11,12 +11,13 @@ export default async function handler(req, res) {
 
   try {
     const response = await openai.chat.completions.create({
-      model: "gpt-4o",
+      model: ""deepseek/deepseek-chat-v3-0324:free",
       messages: [
         {
           role: "user",
+          
           content: `Create a recipe using these ingredients: ${ingredients.join(", ")}. `,
-        },
+        }, 
       ],
     });
 
